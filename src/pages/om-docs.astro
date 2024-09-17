@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="no">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Docs</h1>
+			<p>
+				Her kan du dele dokumentasjon i Markdown-format, uansett hvilket stadie dokumentasjonen er i — Utkast, ferdig, eller noe midt i mellom.
+			</p>
+			<p>Slik gjør du det:</p>
+			<ul>
+				<li>Legg til eller rediger docs i content-mappen</li>
+				<li>Push endringene til Github</li>
+				<li>Del dokumentasjonen med kollegar</li>
+			</ul>
+			<p>
+				<a href="/docs">Gå til Docs</a> for å se og samarbeide på dokumentasjonen.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
