@@ -12,7 +12,6 @@ jobs:
       packages: write
       contents: read
       id-token: write
-
     steps:
       - uses: 'actions/checkout@v3'
       - uses: 'actions/setup-node@v3'
@@ -53,5 +52,5 @@ jobs:
         uses: 'nais/deploy/actions/deploy@v2'
         env:
           CLUSTER: 'prod-gcp'
-          RESOURCE: nais/prod/nais.yaml
+          RESOURCE: nais.yaml
           VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
