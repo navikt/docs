@@ -9,7 +9,7 @@ heroImage: '/blog-placeholder-about.jpg'
 - Installer `yarn create astro`
 - Kjør lokalt `yarn dev`
 
-### Legg til README, LICENCE og CODEOWNERS i root mappen
+### Legg til README, LICENCE og CODEOWNERS
 
 - [Mal for README](https://github.com/navikt/offentlig/blob/main/README.template.md)
 - [Mal for LICENCE](https://github.com/navikt/offentlig/blob/main/LISENSIERING.md)
@@ -18,7 +18,7 @@ heroImage: '/blog-placeholder-about.jpg'
 ### Legg til isAlive og isReady
 
 - Lag mappenene "/api/internal/" i src mappen
-- Legg til filene isAlive.ts og isReady.ts i mappen "/api/internal/" med følgende kode i hver fil:
+- Legg til isAlive.ts og isReady.ts i mappen "/api/internal/" med følgende:
 
 ```
 import type { APIRoute } from 'astro';
