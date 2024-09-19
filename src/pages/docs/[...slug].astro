@@ -14,7 +14,7 @@ type Props = CollectionEntry<'docs'>;
 const post = Astro.props;
 const { Content } = await post.render();
 
-export const prerender = true;
+export const prerender = false;
 ---
 
 <BlogPost {...post.data}>

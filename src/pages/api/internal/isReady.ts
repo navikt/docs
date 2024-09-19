@@ -1,5 +1,3 @@
-import type { APIRoute } from 'astro';
-
-export const GET: APIRoute = async function get() {
-    return new Response(null, { status: 200 });
-};
+export default async function handler(req, res) {
+    res.status(200).send('OK');
+}
