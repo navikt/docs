@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	integrations: [mdx(), sitemap()],
 	site: 'https://docs.ansatt.nav.no',
-	output: 'server',
+	output: 'hybrid',
 	adapter: node({
 		mode: 'standalone',
 	}),
