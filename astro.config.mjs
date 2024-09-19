@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [mdx(), sitemap()],
-	output: 'server',
+	output: 'hybrid',
 	adapter: node({
 		mode: 'standalone',
 	}),
