@@ -9,11 +9,12 @@ export async function getStaticPaths() {
 		props: post,
 	}));
 }
-
 type Props = CollectionEntry<'docs'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
+
+export const prerender = true;
 ---
 
 <BlogPost {...post.data}>
