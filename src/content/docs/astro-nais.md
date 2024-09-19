@@ -21,7 +21,6 @@ heroImage: '/blog-placeholder-about.jpg'
 - Legg til isAlive.ts og isReady.ts i mappen "/api/internal/" med følgende:
 
 ```
-
 import type { APIRoute } from 'astro';
 
 export const prerender = false;
@@ -31,20 +30,21 @@ export const GET: APIRoute = async function get() {
 };
 ```
 
-### Legg til Dockerfile, nais.yaml
+### Legg til nais.yaml
 
-- [Mal for Dockerfile](https://github.com/navikt/docs/blob/main/Dockerfile)
-- [Mal for nais.yaml](https://github.com/navikt/docs/blob/main/nais.yaml)
-
-I nais.yaml husk å endre
+[Mal for nais.yaml](https://github.com/navikt/docs/blob/main/nais.yaml). Endre følgende:
 
 - "name" til ønsket appnavn
 - "teamspace" til ditt team
 - "ingresses" til ønsket url der appen skal kjøre
 
+### Legg til Dockerfile
+
+[Mal for Dockerfile](https://github.com/navikt/docs/blob/main/Dockerfile)
+
 ### Endre i astro.config.js
 
-- Mal for [astro.config.js](https://github.com/navikt/docs/blob/main/astro.config.mjs)
+Mal for [astro.config.js](https://github.com/navikt/docs/blob/main/astro.config.mjs)
 
 ### Legg til Github workflow
 
@@ -63,7 +63,6 @@ Husk å endre til ditt team under "build and push" i deploy.yaml
 - Legg til ønsket navn for repo (det du gav tillatelse for via NAIS Console)
 - Velg om koden skal være public / privat
 - Velg github organisasjon "navikt"
-
 
 ### Appen din kjører nå på NAIS!
 
