@@ -3,6 +3,8 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
 	title: string;
 	description: string;
@@ -19,6 +21,7 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />-->
 <meta name="generator" content={Astro.generator} />
+<ViewTransitions />
 
 <script defer src="https://cdn.nav.no/team-researchops/sporing/sporing.js" data-host-url="https://umami.nav.no" data-website-id="0a0bc436-1eac-45ac-81ab-697ab77ebec1"></script>
 <script>
